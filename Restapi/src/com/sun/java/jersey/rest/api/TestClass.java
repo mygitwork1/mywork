@@ -3,7 +3,7 @@ package com.sun.java.jersey.rest.api;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 
-@Path("/test/*")
+@Path("/test")
 public class TestClass {
 	
 	@GET
