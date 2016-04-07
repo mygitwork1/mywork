@@ -12,6 +12,8 @@ import com.java.dao.*;
 @Path("/dbtest")
 public class DBTest {
 	
+	
+	//http://localhost:8001/Restapi/api/dbtest  URI
 	@GET
 	@Produces(MediaType.TEXT_HTML)
 	public String testingDBConnection() throws Exception{
