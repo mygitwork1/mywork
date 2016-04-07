@@ -23,13 +23,17 @@ public class DBTest {
 		
 		try {
 			
+			// getting data base connection
 			conn =  DAO.getDBConnection().getConnection();
+			
+			// query string to get current data and time from data base for testing purpose
 			statement = conn.prepareStatement("select to_char(sysdate,'YYYY-MM-DD HH24:MI:SS')DATETIME FROM SYS.DUAL");
 			
 			ResultSet set = statement.executeQuery();
 			while(set.next()){
 				queryString = set.getString("DATETIME");
 			}
+			// creating result view to display to user
 			result = "<p>Date time from data base:::</p>"+"<p>date/time retrun"+queryString+"</p>";
 			
 			//set.next();
@@ -43,7 +47,7 @@ public class DBTest {
 		}
 		
 		
-		
+		// returning result string
 		return result;
 	}
 
