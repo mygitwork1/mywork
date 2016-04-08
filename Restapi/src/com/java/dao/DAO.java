@@ -1,5 +1,7 @@
 package com.java.dao;
 
+import java.sql.Connection;
+
 import javax.naming.*;
 import javax.sql.*;
 
@@ -31,5 +33,20 @@ public class DAO {
 	
 	return dataSource;
 	}
+	
+	
+	public static Connection oracleStudentsConnection() {
+		Connection conn = null;
+		try {
+			conn = getDBConnection().getConnection();
+			return conn;
+		} 
+		catch (Exception e) {
+			e.printStackTrace();
+		}
+		return conn;
+	}
+	
+	
 
 }
