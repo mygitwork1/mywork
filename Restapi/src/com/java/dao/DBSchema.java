@@ -137,5 +137,30 @@ public class DBSchema extends DAO {
 	}
 		return 200;// success
 	}
+	
+	public Integer deleteStudent(Integer sid)throws Exception{
+		System.out.println("Student id:::::"+sid);
+		PreparedStatement query = null;
+		Connection connection   = null;
+		
+		try {
+			//DBSchema dbSchema = new DBSchema();
+			connection = oracleStudentsConnection();
+			query      = connection.prepareStatement("DELETE FROM STUDENT WHERE SID= ?");
+			query.setInt(1,sid);
+			query.executeQuery();
+			query.close();
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+			return 500;//Error
+		}finally{
+			if(connection != null){
+				connection.close();
+			}
+		}
+		return 200;//Success
+	}
 
 }
