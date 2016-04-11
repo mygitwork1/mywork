@@ -19,6 +19,30 @@ import com.java.utils.ToJSON;
 
 public class DBSchema extends DAO {
 	
+	
+	public JSONArray getStudentDetails()throws Exception{
+		System.out.println("inside getStudentDetails method....");
+		PreparedStatement query = null;
+		Connection connection = null;
+		JSONArray array = new JSONArray();
+		ToJSON converter = new ToJSON();
+		try {
+			connection = oracleStudentsConnection();
+			query      = connection.prepareStatement("SELECT * FROM STUDENT");
+			ResultSet set = query.executeQuery();
+			array = converter.toJSONArray(set);
+			
+		} catch (Exception e) {
+		e.printStackTrace();
+		}finally{
+			if(connection != null){
+				connection.close();
+			}
+		}
+		return array;
+	}
+	
+	
 	public JSONArray getStudentDeatils(String grade) throws Exception{
 		System.out.println("grade::"+grade);
 		  PreparedStatement statement = null;
@@ -163,6 +187,41 @@ public class DBSchema extends DAO {
 			}
 		}
 		return 200;//Success
+	}
+	
+	
+	// Update student 
+	public Integer updateStudent(Integer VALUE1,String VALUE2)throws Exception{
+		System.out.println("Student id:::::"+VALUE1);
+		PreparedStatement query = null;
+		Connection connection   = null;
+		Integer returningValue= null;
+		Integer SUCCESS_CODE  = 200;
+		Integer ERROR_CODE    = 500;
+		
+		try {
+			//DBSchema dbSchema = new DBSchema();
+			connection = oracleStudentsConnection();
+			query      = connection.prepareStatement("UPDATE STUDENT SET LNAME=? WHERE SID= ?");
+			query.setString(1,VALUE2);
+			query.setInt(2,VALUE1);
+			returningValue =query.executeUpdate();
+			//query.close();
+			System.out.println("returningValue:::"+returningValue);
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+			return 500;//Error
+		}finally{
+			if(connection != null){
+				connection.close();
+			}
+		}
+		if(returningValue == 0){
+			return ERROR_CODE;
+		}
+			return SUCCESS_CODE;//Success
 	}
 
 }
