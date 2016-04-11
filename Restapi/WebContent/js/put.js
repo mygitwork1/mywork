@@ -12,23 +12,23 @@ $(document).ready(function() {
 		, $SET_PC_PARTS_MAKER = $('#SET_PC_PARTS_MAKER')
 		, $SET_PC_PARTS_CODE = $('#SET_PC_PARTS_CODE');
 	
-	getInventory();
+	get();
 	
 	$(document.body).on('click', ':button, .UPDATE_BTN', function(e) {
 		//console.log(this);
 		var $this = $(this)
-			, PC_PARTS_PK = $this.val()
+			, SID = $this.val()
 			, $tr = $this.closest('tr')
-			, PC_PARTS_MAKER = $tr.find('.CL_PC_PARTS_MAKER').text()
-			, PC_PARTS_CODE = $tr.find('.CL_PC_PARTS_CODE').text()
-			, PC_PARTS_TITLE = $tr.find('.CL_PC_PARTS_TITLE').text()
+			, FNAME = $tr.find('.CL_FNAME').text()
+			, LNAME = $tr.find('.CL_LNAME').text()
+			, ADDRESS = $tr.find('.CL_ADDRESS').text()
 			, PC_PARTS_AVAIL = $tr.find('.CL_PC_PARTS_AVAIL').text()
 			, PC_PARTS_DESC = $tr.find('.CL_PC_PARTS_DESC').text();
 		
-		$('#SET_PC_PARTS_PK').val(PC_PARTS_PK);
-		$SET_PC_PARTS_MAKER.text(PC_PARTS_MAKER);
-		$SET_PC_PARTS_CODE.text(PC_PARTS_CODE);
-		$('#SET_PC_PARTS_TITLE').text(PC_PARTS_TITLE);
+		$('#SID').val(SID);
+		$SET_PC_PARTS_MAKER.text(FNAME);
+		$SET_PC_PARTS_CODE.text(LNAME);
+		$('#ADDRESS').text(ADDRESS);
 		$('#SET_PC_PARTS_AVAIL').val(PC_PARTS_AVAIL);
 		$('#SET_PC_PARTS_DESC').text(PC_PARTS_DESC);
 		
@@ -42,15 +42,15 @@ $(document).ready(function() {
 			, PC_PARTS_MAKER = $SET_PC_PARTS_MAKER.text()
 			, PC_PARTS_CODE = $SET_PC_PARTS_CODE.text();
 		
-		updateInventory(obj, PC_PARTS_MAKER, PC_PARTS_CODE);
+		update(obj, PC_PARTS_MAKER, PC_PARTS_CODE);
 	});
 });
 
-function updateInventory(obj, maker, code) {
+function update(obj, maker, code) {
 	
 	ajaxObj = {  
 			type: "PUT",
-			url: "http://localhost:7001/com.youtube.rest/api/v3/inventory/" + maker + "/" + code,
+			url: "http://localhost:8001/Restapi/api/put/submit" + maker + "/" + code,
 			data: JSON.stringify(obj), 
 			contentType:"application/json",
 			error: function(jqXHR, textStatus, errorThrown) {
@@ -62,7 +62,7 @@ function updateInventory(obj, maker, code) {
 			},
 			complete: function(XMLHttpRequest) {
 				//console.log( XMLHttpRequest.getAllResponseHeaders() );
-				getInventory();
+				get();
 			}, 
 			dataType: "json" //request JSON
 		};
@@ -70,14 +70,14 @@ function updateInventory(obj, maker, code) {
 	return $.ajax(ajaxObj);
 }
 
-function getInventory() {
+function get() {
 	
 	var d = new Date()
 		, n = d.getTime();
 	
 	ajaxObj = {  
 			type: "GET",
-			url: "http://localhost:7001/com.youtube.rest/api/v1/inventory", 
+			url: "http://localhost:8001/Restapi/api/put/submit", 
 			data: "ts="+n, 
 			contentType:"application/json",
 			error: function(jqXHR, textStatus, errorThrown) {
@@ -89,7 +89,7 @@ function getInventory() {
 				
 				$.each(data, function(index1, val1) {
 					//console.log(val1);
-					html_string = html_string + templateGetInventory(val1);
+					html_string = html_string + getTemplate(val1);
 				});
 				
 				$('#get_inventory').html("<table border='1'>" + html_string + "</table>");
@@ -103,7 +103,7 @@ function getInventory() {
 	return $.ajax(ajaxObj);
 }
 
-function templateGetInventory(param) {
+function getTemplate(param) {
 	return '<tr>' +
 				'<td class="CL_PC_PARTS_MAKER">' + param.PC_PARTS_MAKER + '</td>' +
 				'<td class="CL_PC_PARTS_CODE">' + param.PC_PARTS_CODE + '</td>' +

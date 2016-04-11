@@ -14,7 +14,7 @@ $(document).ready(function() {
 	/**
 	 * This is for the Submit button
 	 * It will trigger a ajax POST call to: api/post/submit
-	 * This will submit a item entry to our general database
+	 * This will submit a item entry to our  database
 	 */
 	$('#submit_it').click(function(e) {
 		//console.log("submit button has been clicked");
@@ -37,6 +37,7 @@ $(document).ready(function() {
 				//console.log(data);
 				if(data[0].HTTP_CODE == 200) {
 					$('#div_ajaxResponse').text( data[0].MSG );
+					//alert("Success!!!!!!");
 				}
 			},
 			complete: function(XMLHttpRequest) {

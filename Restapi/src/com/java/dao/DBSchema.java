@@ -19,7 +19,8 @@ import com.java.utils.ToJSON;
 
 public class DBSchema extends DAO {
 	
-	public JSONArray getStudentDeatils(String studentID) throws Exception{
+	public JSONArray getStudentDeatils(String grade) throws Exception{
+		System.out.println("grade::"+grade);
 		  PreparedStatement statement = null;
 		  Connection connection       = null;
 		  JSONArray array = new JSONArray();
@@ -27,8 +28,40 @@ public class DBSchema extends DAO {
 		  try {
 			  
 			  connection = oracleStudentsConnection();
-			  statement  = connection.prepareStatement("SELECT SID,FNAME,LNAME,ADDRESS,DOB,DOJ,COURCE,GRADE FROM STUDENT WHERE UPPER(grade)= ? ");
-			  statement.setString(1, studentID.toUpperCase());
+			  statement  = connection.prepareStatement("SELECT SID,FNAME,LNAME,ADDRESS,COURCE,GRADE FROM STUDENT WHERE UPPER(grade)= ? ");
+			  statement.setString(1, grade.toUpperCase());
+			  ResultSet set = statement.executeQuery();
+			  array = converter.toJSONArray(set);
+			  statement.close();
+		} catch(SQLException exception){
+			exception.printStackTrace();
+			return array;
+		} 
+		  catch (Exception e) {
+			e.printStackTrace();
+			return array;
+		}finally{
+			if(connection != null){
+				connection.close();
+			}
+		}
+		return array;
+	}
+	
+	
+	public JSONArray getStudentDeatilsWith2Params(String grade,String sid) throws Exception{
+		System.out.println("grade::"+grade);
+		  PreparedStatement statement = null;
+		  Connection connection       = null;
+		  JSONArray array = new JSONArray();
+		  ToJSON converter = new ToJSON();
+		  try {
+			  
+			  connection = oracleStudentsConnection();
+			  statement  = connection.prepareStatement("SELECT SID,FNAME,LNAME,ADDRESS,COURCE,GRADE FROM STUDENT WHERE UPPER(grade)= ? and sid=?");
+			  Integer SID = Integer.parseInt(sid);
+			  statement.setString(1, grade.toUpperCase());
+			  statement.setInt(2,SID);
 			  ResultSet set = statement.executeQuery();
 			  array = converter.toJSONArray(set);
 			  statement.close();
@@ -58,8 +91,6 @@ public class DBSchema extends DAO {
 	 * @param FNAME
 	 * @param LNAME
 	 * @param ADDRESS
-	 * @param DOJ
-	 * @param DOB
 	 * @param COURSE
 	 * @param GRADE
 	 * @return integer 200 for success, 500 for error
@@ -71,8 +102,6 @@ public class DBSchema extends DAO {
 			                     String fName,
 			                     String lName,
 			                     String address,
-			                     Date doj,
-			                     Date dob,
 			                     String cource,
 			                     String grade) throws Exception,SQLException {
      PreparedStatement preparedStatement = null;
@@ -86,17 +115,15 @@ public class DBSchema extends DAO {
 			 */
     	 
     	 connection = oracleStudentsConnection();
-    	 preparedStatement = connection.prepareStatement("inset into student"+
-    	                                                 "(SID,FNAME,LNAME,ADDRESS,DOB,DOJ,COURCE,GRADE)"+
-    			                                         "VALUES(?,?,?,?,?,?,?,?)");
+    	 preparedStatement = connection.prepareStatement("insert into student"+"(SID,FNAME,LNAME,ADDRESS,COURCE,GRADE)"+" VALUES(?,?,?,?,?,?)");
     	 preparedStatement.setInt(1,sID);
     	 preparedStatement.setString(2,fName);
     	 preparedStatement.setString(3,lName);
     	 preparedStatement.setString(4,address);
-    	 preparedStatement.setDate(5,dob);
-    	 preparedStatement.setDate(6, doj);
-    	 preparedStatement.setString(7,cource);
-    	 preparedStatement.setString(8,grade);
+    	// preparedStatement.setDate(5,dob);
+    	 //preparedStatement.setDate(6, doj);
+    	 preparedStatement.setString(5,cource);
+    	 preparedStatement.setString(6,grade);
     	 
     	 preparedStatement.executeUpdate();
 		

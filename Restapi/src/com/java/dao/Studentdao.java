@@ -8,9 +8,9 @@ public class Studentdao {
 	public String  fName;
 	public String  lName;
 	public String  address;
-	public Date  doj;
-	public Date  dob;
-	public String  course;
+	//public Date  doj;
+	//public Date  dob;
+	public String  cource;
 	public String  grade;
 	
 	
@@ -43,7 +43,7 @@ public class Studentdao {
 	public void setAddress(String address) {
 		this.address = address;
 	}
-	public Date getDoj() {
+/*	public Date getDoj() {
 		return doj;
 	}
 	public void setDoj(Date doj) {
@@ -54,12 +54,12 @@ public class Studentdao {
 	}
 	public void setDob(Date dob) {
 		this.dob = dob;
-	}
+	}*/
 	public String getCource() {
-		return course;
+		return cource;
 	}
 	public void setCource(String cource) {
-		this.course = cource;
+		this.cource = cource;
 	}
 	public String getGrade() {
 		return grade;

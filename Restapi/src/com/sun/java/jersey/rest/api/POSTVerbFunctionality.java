@@ -41,11 +41,14 @@ public class POSTVerbFunctionality {
 					                                       studentdao.getfName(),
 					                                       studentdao.getlName(),
 					                                       studentdao.getAddress(),
-					                                       studentdao.getDoj(),
-					                                       studentdao.getDob(),
+					                                       //studentdao.getDoj(),
+					                                      // studentdao.getDob(),
+			
 					                                       studentdao.getCource(),
 					                                       studentdao.getGrade());
+			System.out.println("http_code::"+http_code);
 			if(http_code == 200){
+				
 				returningString = "Student added successfully!!!!!!!!!";
 			}else{
 				return Response.status(500).entity("Unable to add student please try againg after some time thanks....").build();
