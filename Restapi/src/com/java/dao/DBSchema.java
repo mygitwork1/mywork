@@ -142,14 +142,16 @@ public class DBSchema extends DAO {
 		System.out.println("Student id:::::"+sid);
 		PreparedStatement query = null;
 		Connection connection   = null;
+		Integer returningValue= null;
 		
 		try {
 			//DBSchema dbSchema = new DBSchema();
 			connection = oracleStudentsConnection();
 			query      = connection.prepareStatement("DELETE FROM STUDENT WHERE SID= ?");
 			query.setInt(1,sid);
-			query.executeQuery();
-			query.close();
+			returningValue =query.executeUpdate();
+			//query.close();
+			System.out.println("returningValue:::"+returningValue);
 			
 		} catch (Exception e) {
 			// TODO: handle exception
