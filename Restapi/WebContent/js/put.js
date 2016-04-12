@@ -9,10 +9,10 @@
 $(document).ready(function() {
 	
 	var $put_example = $('#put_example')
-		, $SET_PC_PARTS_MAKER = $('#SET_PC_PARTS_MAKER')
-		, $SET_PC_PARTS_CODE = $('#SET_PC_PARTS_CODE');
+		, $SET_FNAME = $('#SET_FNAME')
+		, $SET_LNAME = $('#SET_LNAME');
 	
-	get();
+	getInventory();
 	
 	$(document.body).on('click', ':button, .UPDATE_BTN', function(e) {
 		//console.log(this);
@@ -22,15 +22,15 @@ $(document).ready(function() {
 			, FNAME = $tr.find('.CL_FNAME').text()
 			, LNAME = $tr.find('.CL_LNAME').text()
 			, ADDRESS = $tr.find('.CL_ADDRESS').text()
-			, PC_PARTS_AVAIL = $tr.find('.CL_PC_PARTS_AVAIL').text()
-			, PC_PARTS_DESC = $tr.find('.CL_PC_PARTS_DESC').text();
+			, COURCE = $tr.find('.CL_COURCE').text()
+			, GRADE = $tr.find('.CL_GRADE').text();
 		
-		$('#SID').val(SID);
-		$SET_PC_PARTS_MAKER.text(FNAME);
-		$SET_PC_PARTS_CODE.text(LNAME);
-		$('#ADDRESS').text(ADDRESS);
-		$('#SET_PC_PARTS_AVAIL').val(PC_PARTS_AVAIL);
-		$('#SET_PC_PARTS_DESC').text(PC_PARTS_DESC);
+		$('#SET_SID').val(SID);
+		$SET_FNAME.text(FNAME);
+		$SET_LNAME.text(LNAME);
+		$('#SET_ADDRESS').text(ADDRESS);
+		$('#SET_COURCE').val(COURCE);
+		$('#SET_GRADE').text(GRADE);
 		
 		$('#update_response').text("");
 	});
@@ -39,18 +39,18 @@ $(document).ready(function() {
 		e.preventDefault(); //cancel form submit
 		
 		var obj = $put_example.serializeObject()
-			, PC_PARTS_MAKER = $SET_PC_PARTS_MAKER.text()
-			, PC_PARTS_CODE = $SET_PC_PARTS_CODE.text();
+			, FNAME = $SET_FNAME.text()
+			, LNAME = $SET_LNAME.text();
 		
-		update(obj, PC_PARTS_MAKER, PC_PARTS_CODE);
+		updateInventory(obj, FNAME, LNAME);
 	});
 });
 
-function update(obj, maker, code) {
+function updateInventory(obj, fname, lname) {
 	
 	ajaxObj = {  
 			type: "PUT",
-			url: "http://localhost:8001/Restapi/api/put/submit" + maker + "/" + code,
+			url: "http://localhost:8001/Restapi/api/update/" + fname + "/" + lname,
 			data: JSON.stringify(obj), 
 			contentType:"application/json",
 			error: function(jqXHR, textStatus, errorThrown) {
@@ -62,7 +62,7 @@ function update(obj, maker, code) {
 			},
 			complete: function(XMLHttpRequest) {
 				//console.log( XMLHttpRequest.getAllResponseHeaders() );
-				get();
+				getInventory();
 			}, 
 			dataType: "json" //request JSON
 		};
@@ -70,14 +70,14 @@ function update(obj, maker, code) {
 	return $.ajax(ajaxObj);
 }
 
-function get() {
+function getInventory() {
 	
 	var d = new Date()
 		, n = d.getTime();
 	
 	ajaxObj = {  
 			type: "GET",
-			url: "http://localhost:8001/Restapi/api/put/submit", 
+			url: "http://localhost:8001/Restapi/api/search", 
 			data: "ts="+n, 
 			contentType:"application/json",
 			error: function(jqXHR, textStatus, errorThrown) {
@@ -89,7 +89,7 @@ function get() {
 				
 				$.each(data, function(index1, val1) {
 					//console.log(val1);
-					html_string = html_string + getTemplate(val1);
+					html_string = html_string + templateGetInventory(val1);
 				});
 				
 				$('#get_inventory').html("<table border='1'>" + html_string + "</table>");
@@ -103,13 +103,13 @@ function get() {
 	return $.ajax(ajaxObj);
 }
 
-function getTemplate(param) {
+function templateGetInventory(param) {
 	return '<tr>' +
-				'<td class="CL_PC_PARTS_MAKER">' + param.PC_PARTS_MAKER + '</td>' +
-				'<td class="CL_PC_PARTS_CODE">' + param.PC_PARTS_CODE + '</td>' +
-				'<td class="CL_PC_PARTS_TITLE">' + param.PC_PARTS_TITLE + '</td>' +
-				'<td class="CL_PC_PARTS_AVAIL">' + param.PC_PARTS_AVAIL + '</td>' +
-				'<td class="CL_PC_PARTS_DESC">' + param.PC_PARTS_DESC + '</td>' +
-				'<td class="CL_PC_PARTS_BTN"> <button class="UPDATE_BTN" value=" ' + param.PC_PARTS_PK + ' " type="button">Update</button> </td>' +
+				'<td class="CL_FNAME">' + param.FNAME + '</td>' +
+				'<td class="CL_LNAME">' + param.LNAME + '</td>' +
+				'<td class="CL_ADDRESS">' + param.ADDRESS + '</td>' +
+				'<td class="CL_COURCE">' + param.COURCE + '</td>' +
+				'<td class="CL_GRADE">' + param.GRADE + '</td>' +
+				'<td class="CL_STUDENT_BTN"> <button class="UPDATE_BTN" value=" ' + param.SID + ' " type="button" bgcolor="#00FA00">Update</button> </td>' +
 			'</tr>';
 }

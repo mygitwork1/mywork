@@ -1,18 +1,11 @@
 package com.java.dao;
 
 import java.sql.Connection;
-import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import javax.ws.rs.Consumes;
-import javax.ws.rs.POST;
-import javax.ws.rs.Produces;
-import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.Response;
 
-import org.codehaus.jackson.map.ObjectMapper;
 import org.codehaus.jettison.json.JSONArray;
 
 import com.java.utils.ToJSON;
@@ -56,7 +49,7 @@ public class DBSchema extends DAO {
 			  statement.setString(1, grade.toUpperCase());
 			  ResultSet set = statement.executeQuery();
 			  array = converter.toJSONArray(set);
-			  statement.close();
+			  //statement.close();
 		} catch(SQLException exception){
 			exception.printStackTrace();
 			return array;
@@ -186,13 +179,16 @@ public class DBSchema extends DAO {
 				connection.close();
 			}
 		}
+		if(returningValue == 0){
+			return 500;
+		}
 		return 200;//Success
 	}
 	
 	
 	// Update student 
 	public Integer updateStudent(Integer VALUE1,String VALUE2)throws Exception{
-		System.out.println("Student id:::::"+VALUE1);
+		System.out.println("SID:::::"+VALUE1+"::::COURCE:::"+VALUE2);
 		PreparedStatement query = null;
 		Connection connection   = null;
 		Integer returningValue= null;
@@ -202,7 +198,7 @@ public class DBSchema extends DAO {
 		try {
 			//DBSchema dbSchema = new DBSchema();
 			connection = oracleStudentsConnection();
-			query      = connection.prepareStatement("UPDATE STUDENT SET LNAME=? WHERE SID= ?");
+			query      = connection.prepareStatement("UPDATE STUDENT SET COURCE=? WHERE SID= ?");
 			query.setString(1,VALUE2);
 			query.setInt(2,VALUE1);
 			returningValue =query.executeUpdate();

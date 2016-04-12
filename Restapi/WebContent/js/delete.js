@@ -13,21 +13,21 @@ $(document).ready(function() {
 	$(document.body).on('click', ':button, .DELETE_BTN', function(e) {
 		//console.log(this);
 		var $this = $(this)
-			, PC_PARTS_PK = $this.val()
-			, obj = {PC_PARTS_PK : PC_PARTS_PK}
+			, SID = $this.val()
+			, obj = {SID : SID}
 			, $tr = $this.closest('tr')
-			, PC_PARTS_MAKER = $tr.find('.CL_PC_PARTS_MAKER').text()
-			, PC_PARTS_CODE = $tr.find('.CL_PC_PARTS_CODE').text();
+			, FNAME = $tr.find('.CL_FNAME').text()
+			, LNAME = $tr.find('.CL_LNAME').text();
 		
-		deleteInventory(obj, PC_PARTS_MAKER, PC_PARTS_CODE);
+		deleteInventory(obj, FNAME, LNAME);
 	});
 });
 
-function deleteInventory(obj, maker, code) {
+function deleteInventory(obj, fname, lname) {
 	
 	ajaxObj = {  
 			type: "DELETE",
-			url: "http://localhost:7001/com.youtube.rest/api/v3/inventory/" + maker + "/" + code,
+			url: "http://localhost:8001/Restapi/api/delete/" + fname + "/" + lname,
 			data: JSON.stringify(obj), 
 			contentType:"application/json",
 			error: function(jqXHR, textStatus, errorThrown) {
@@ -54,7 +54,7 @@ function getInventory() {
 	
 	ajaxObj = {  
 			type: "GET",
-			url: "http://localhost:7001/com.youtube.rest/api/v1/inventory", 
+			url: "http://localhost:8001/Restapi/api/search", 
 			data: "ts="+n,
 			contentType:"application/json",
 			error: function(jqXHR, textStatus, errorThrown) {
@@ -82,11 +82,11 @@ function getInventory() {
 
 function templateGetInventory(param) {
 	return '<tr>' +
-				'<td class="CL_PC_PARTS_MAKER">' + param.PC_PARTS_MAKER + '</td>' +
-				'<td class="CL_PC_PARTS_CODE">' + param.PC_PARTS_CODE + '</td>' +
-				'<td class="CL_PC_PARTS_TITLE">' + param.PC_PARTS_TITLE + '</td>' +
-				'<td class="CL_PC_PARTS_AVAIL">' + param.PC_PARTS_AVAIL + '</td>' +
-				'<td class="CL_PC_PARTS_DESC">' + param.PC_PARTS_DESC + '</td>' +
-				'<td class="CL_PC_PARTS_BTN"> <button class="DELETE_BTN" value=" ' + param.PC_PARTS_PK + ' " type="button">Delete</button> </td>' +
+				'<td class="CL_FNAME">' + param.FNAME + '</td>' +
+				'<td class="CL_LNAME">' + param.LNAME + '</td>' +
+				'<td class="CL_ADDRESS">' + param.ADDRESS + '</td>' +
+				'<td class="CL_COURCE">' + param.COURCE + '</td>' +
+				'<td class="CL_GRADE">' + param.GRADE + '</td>' +
+				'<td class="CL_STUDENT_BTN"> <button class="UPDATE_BTN" value=" ' + param.SID + ' " type="button">Delete</button> </td>' +
 			'</tr>';
 }

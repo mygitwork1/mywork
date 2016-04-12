@@ -14,42 +14,13 @@ import com.java.dao.DBSchema;
 
 @Path("/search/students")
 public class HTP_GETFunctionality {
-	/**
-	 * This method will return all students that are listed
-	 * in student table.
-	 * 
-	 * Note: This is a good method for a tutorial but probably should never
-	 * has a method that returns everything from a database.  There should be
-	 * built in limits.
-	 * 
-	 * @return - JSON array string
-	 * @throws Exception
-	 */
-	
-	@GET
-	@Produces(MediaType.APPLICATION_JSON)
-	
-	public String returnStudents()throws Exception{
-		String returningString = null;
-		JSONArray jsonArray= new JSONArray();
-		try {
-			DBSchema schema = new DBSchema();
-			jsonArray = schema.getStudentDetails();
-			returningString = jsonArray.toString();
-		} catch (Exception e) {
-			// TODO: handle exception
-			e.printStackTrace();
-		}
-		
-		return returningString;
-	}
 	
 	/**
 	 * This method will return the specific student details the user is looking for.  
 	 * It uses a QueryParam bring in the data to the method.
 	 * 
 	 * Example would be:
-	 * http://localhost:8001/Restapi/api/search/queryparameter?grade=c
+	 * http://localhost:8001/Restapi/api/search/students?grade=c
 	 * 
 	 * @param grade - student grade
 	 * @return - json array results list from the database
@@ -68,7 +39,12 @@ public class HTP_GETFunctionality {
 		
 		DBSchema schema = new DBSchema();
 		jsonArray = schema.getStudentDeatils(grade);
-		returnString = jsonArray.toString();		
+		if(jsonArray.length() !=0){
+			returnString = jsonArray.toString();	
+		}else{
+			return Response.status(400).entity("Result not found..").build();
+		}
+				
 		}catch (Exception e) {
 			// TODO: handle exception
 			e.printStackTrace();
@@ -84,7 +60,7 @@ public class HTP_GETFunctionality {
 	 * It uses a Path param bring in the data to the method.
 	 * 
 	 * Example would be:
-	 * http://localhost:8001/Restapi/api/search/pathparam/c
+	 * http://localhost:8001/Restapi/api/search/students/a
 	 * 
 	 * @param grade - student grade
 	 * @return - json array results list from the database
@@ -101,7 +77,13 @@ public class HTP_GETFunctionality {
 		try {
 			DBSchema dbSchema = new DBSchema();
 			array = dbSchema.getStudentDeatils(grade);
-			returnString = array.toString();
+			if(array.length() !=0){
+				System.out.println("Result not found error..");
+				returnString = array.toString();	
+			}else{
+				return Response.status(400).entity("Result not found..").build();
+			}
+			//returnString = array.toString();
 		} catch (Exception e) {
 
 		e.printStackTrace();
@@ -117,7 +99,7 @@ public class HTP_GETFunctionality {
 	 * It uses a Path param bring in the data to the method.
 	 * 
 	 * Example would be:
-	 * http://localhost:8001/Restapi/api/search/pathparam/c/11
+	 * http://localhost:8001/Restapi/api/search/students/c/11
 	 * 
 	 * @param grade - student grade
 	 * @return - json array results list from the database
@@ -134,7 +116,12 @@ public class HTP_GETFunctionality {
 		try {
 			DBSchema dbSchema = new DBSchema();
 			array = dbSchema.getStudentDeatilsWith2Params(grade,sid);
-			returnString = array.toString();
+			//returnString = array.toString();
+			if(array.length() !=0){
+				returnString = array.toString();	
+			}else{
+				return Response.status(400).entity("Result not found..").build();
+			}
 		} catch (Exception e) {
 
 		e.printStackTrace();

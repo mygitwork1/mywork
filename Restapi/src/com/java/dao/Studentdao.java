@@ -1,6 +1,5 @@
 package com.java.dao;
 
-import java.sql.Date;
 
 public class Studentdao {
 	

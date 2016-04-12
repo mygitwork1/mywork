@@ -8,6 +8,9 @@ import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
+import org.codehaus.jettison.json.JSONArray;
+import org.codehaus.jettison.json.JSONObject;
+
 import com.java.dao.DBSchema;
 
 @Path("/delete")
@@ -25,23 +28,32 @@ public class HTTP_DELETEVerbFunctionality {
 	 * @return
 	 * @throws Exception
 	 */
-	@Path("/{sid}")
+	@Path("/{fname}/{lname}")
 	@DELETE
 	//@Consumes(MediaType.APPLICATION_FORM_URLENCODED)
 	@Produces(MediaType.APPLICATION_JSON)
-	public Response deleteStudent(@PathParam("sid")Integer sid) throws Exception{
-		System.out.println("SID::"+sid);
+	public Response deleteStudent(@PathParam("fname")String fname,@PathParam("lname")String lname,String incomingData) throws Exception{
+		System.out.println("incomingData::"+incomingData);
+		System.out.println("FName::"+fname+":::lname::"+lname);
 		String returningString = null;
-		
+		Integer sid;
+		JSONArray jsonArray = new JSONArray();
+		JSONObject jsonObject = new JSONObject();
+		DBSchema schema = new DBSchema();
 		try {
-			DBSchema schema = new DBSchema();
+			JSONObject object = new JSONObject(incomingData);
+			sid = object.optInt("SID");
+			
 			Integer http_code = schema.deleteStudent(sid);
 			System.out.println("http_code:::"+http_code);
 			if(http_code == 200){
-				returningString = "Student deleted from data base successfully!!!!!!!!";
+				jsonObject.put("HTTP_CODE","200");
+				jsonObject.put("MSG","Student deleted from data base successfully!!!!!!!!");
+				
 			}else{
-				return Response.status(500).entity("Unable to delete student please try again after some time..").build();
+				return Response.status(500).entity("Server cannot process your request please try again after some time!!!!!!!").build();
 			}
+			returningString = jsonArray.put(jsonObject).toString();
 			
 		} catch (Exception  e) {
           e.printStackTrace();
