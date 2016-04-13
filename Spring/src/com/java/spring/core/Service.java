@@ -6,7 +6,7 @@ public class Service {
 		this.name=name;
 	}
 	public void test(){
-		System.out.println("Welcome to spring world.....");
+		System.out.println("Welcome to spring world....."+name);
 	}
 
 }
