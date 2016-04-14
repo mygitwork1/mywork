@@ -63,5 +63,8 @@
 	<classpathentry kind="lib" path="D:/Softwares/Spring4.2.5/spring-websocket-4.2.5.RELEASE.jar"/>
 	<classpathentry kind="lib" path="D:/Softwares/Spring4.2.5/spring-websocket-4.2.5.RELEASE-javadoc.jar"/>
 	<classpathentry kind="lib" path="D:/Softwares/Spring4.2.5/spring-websocket-4.2.5.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="D:/Softwares/Spring4.2.5/commons-dbcp-1.4.jar"/>
+	<classpathentry kind="lib" path="D:/Softwares/Spring4.2.5/commons-pool-1.6.jar"/>
+	<classpathentry kind="lib" path="D:/Softwares/Spring4.2.5/ojdbc14.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
