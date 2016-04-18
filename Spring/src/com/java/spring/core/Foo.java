@@ -2,7 +2,7 @@ package com.java.spring.core;
 
 public class Foo {
 	
-	public void Foo(){
+	public  Foo(){
 		System.out.println("this is FOO class:::");
 	}
 	
