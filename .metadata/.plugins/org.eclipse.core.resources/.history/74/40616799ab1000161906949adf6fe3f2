@@ -1,0 +1,18 @@
+package org.apache.cassandra;
+
+import com.datastax.driver.core.Cluster;
+import com.datastax.driver.core.Session;
+
+public class TestClass {
+
+	public static void main(String[] args) {
+		 //creating Cluster object
+     Cluster builder = Cluster.builder().addContactPoint("127.0.0.1").build();
+     
+     //Creating session object
+     Session session = builder.
+		
+		
+	}
+
+}

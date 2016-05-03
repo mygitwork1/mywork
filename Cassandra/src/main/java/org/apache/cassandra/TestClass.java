@@ -1,0 +1,25 @@
+package org.apache.cassandra;
+
+import com.datastax.driver.core.Cluster;
+import com.datastax.driver.core.Session;
+
+public class TestClass {
+
+	public static void main(String[] args) {
+		
+		//Query
+	 String query = "CREATE KEYSPACE test WITH replication "
+	         + "= {'class':'SimpleStrategy', 'replication_factor':1};";
+	 
+	 //creating Cluster object
+     Cluster cluster = Cluster.builder().addContactPoint("127.0.0.1").build();
+     
+     //Creating session object
+     Session session = cluster.connect();
+     
+     session.execute(query);
+     System.out.println("Keyspace created"); 
+		
+	}
+
+}

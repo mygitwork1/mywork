@@ -79,3 +79,68 @@
 2016-05-02 16:38:51,553 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/main/resources
 2016-05-02 16:38:51,556 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2016-05-02 16:38:51,556 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/test/resources
+2016-05-02 16:56:56,318 [Worker-17] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.apache.cassandra:Cassandra:0.0.1-SNAPSHOT @ /home/hduser/Documents/Cassandra/Cassandra/pom.xml.
+2016-05-02 16:56:56,486 [Worker-17] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/com/datastax/cassandra/cassandra-driver-core/3.0.0/cassandra-driver-core-3.0.0.pom
+2016-05-02 16:56:56,596 [Worker-17] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/com/datastax/cassandra/cassandra-driver-core/3.0.0/cassandra-driver-core-3.0.0.pom
+2016-05-02 16:56:56,644 [Worker-17] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/com/datastax/cassandra/cassandra-driver-parent/3.0.0/cassandra-driver-parent-3.0.0.pom
+2016-05-02 16:56:56,718 [Worker-17] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/com/datastax/cassandra/cassandra-driver-parent/3.0.0/cassandra-driver-parent-3.0.0.pom
+2016-05-02 16:56:56,818 [Worker-17] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/io/netty/netty-handler/4.0.33.Final/netty-handler-4.0.33.Final.pom
+2016-05-02 16:56:56,884 [Worker-17] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/io/netty/netty-handler/4.0.33.Final/netty-handler-4.0.33.Final.pom
+2016-05-02 16:56:56,922 [Worker-17] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/io/netty/netty-parent/4.0.33.Final/netty-parent-4.0.33.Final.pom
+2016-05-02 16:56:57,031 [Worker-17] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/io/netty/netty-parent/4.0.33.Final/netty-parent-4.0.33.Final.pom
+2016-05-02 16:56:57,248 [Worker-17] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/io/netty/netty-buffer/4.0.33.Final/netty-buffer-4.0.33.Final.pom
+2016-05-02 16:56:57,319 [Worker-17] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/io/netty/netty-buffer/4.0.33.Final/netty-buffer-4.0.33.Final.pom
+2016-05-02 16:56:57,371 [Worker-17] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/io/netty/netty-common/4.0.33.Final/netty-common-4.0.33.Final.pom
+2016-05-02 16:56:57,443 [Worker-17] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/io/netty/netty-common/4.0.33.Final/netty-common-4.0.33.Final.pom
+2016-05-02 16:56:57,489 [Worker-17] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/io/netty/netty-transport/4.0.33.Final/netty-transport-4.0.33.Final.pom
+2016-05-02 16:56:57,568 [Worker-17] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/io/netty/netty-transport/4.0.33.Final/netty-transport-4.0.33.Final.pom
+2016-05-02 16:56:57,663 [Worker-17] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/io/netty/netty-codec/4.0.33.Final/netty-codec-4.0.33.Final.pom
+2016-05-02 16:56:57,737 [Worker-17] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/io/netty/netty-codec/4.0.33.Final/netty-codec-4.0.33.Final.pom
+2016-05-02 16:56:58,291 [Worker-17] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/com/datastax/cassandra/cassandra-driver-core/3.0.0/cassandra-driver-core-3.0.0.jar
+2016-05-02 16:56:58,605 [Worker-17] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/com/datastax/cassandra/cassandra-driver-core/3.0.0/cassandra-driver-core-3.0.0.jar
+2016-05-02 16:56:58,638 [Worker-17] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/io/netty/netty-handler/4.0.33.Final/netty-handler-4.0.33.Final.jar
+2016-05-02 16:56:58,776 [Worker-17] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/io/netty/netty-handler/4.0.33.Final/netty-handler-4.0.33.Final.jar
+2016-05-02 16:56:58,809 [Worker-17] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/io/netty/netty-buffer/4.0.33.Final/netty-buffer-4.0.33.Final.jar
+2016-05-02 16:56:58,927 [Worker-17] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/io/netty/netty-buffer/4.0.33.Final/netty-buffer-4.0.33.Final.jar
+2016-05-02 16:56:58,960 [Worker-17] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/io/netty/netty-common/4.0.33.Final/netty-common-4.0.33.Final.jar
+2016-05-02 16:56:59,145 [Worker-17] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/io/netty/netty-common/4.0.33.Final/netty-common-4.0.33.Final.jar
+2016-05-02 16:56:59,177 [Worker-17] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/io/netty/netty-transport/4.0.33.Final/netty-transport-4.0.33.Final.jar
+2016-05-02 16:56:59,332 [Worker-17] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/io/netty/netty-transport/4.0.33.Final/netty-transport-4.0.33.Final.jar
+2016-05-02 16:56:59,364 [Worker-17] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/io/netty/netty-codec/4.0.33.Final/netty-codec-4.0.33.Final.jar
+2016-05-02 16:56:59,464 [Worker-17] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/io/netty/netty-codec/4.0.33.Final/netty-codec-4.0.33.Final.jar
+2016-05-02 16:56:59,910 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-02 16:56:59,910 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/main/resources
+2016-05-02 16:56:59,912 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-02 16:56:59,912 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/test/resources
+2016-05-02 16:57:01,578 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-02 16:57:01,578 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/main/resources
+2016-05-02 16:57:01,581 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-02 16:57:01,581 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/test/resources
+2016-05-02 17:07:48,947 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-02 17:07:48,947 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/main/resources
+2016-05-02 17:07:48,955 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-02 17:07:48,955 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/test/resources
+2016-05-02 17:07:49,985 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-02 17:07:49,985 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/main/resources
+2016-05-02 17:07:49,987 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-02 17:07:49,987 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/test/resources
+2016-05-02 17:17:22,902 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-02 17:17:22,902 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/main/resources
+2016-05-02 17:17:22,905 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-02 17:17:22,906 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/test/resources
+2016-05-02 17:19:48,322 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-02 17:19:48,322 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/main/resources
+2016-05-02 17:19:48,323 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-02 17:19:48,323 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/test/resources
+2016-05-02 17:25:39,256 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-02 17:25:39,256 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/main/resources
+2016-05-02 17:25:39,258 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-02 17:25:39,259 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/test/resources
+2016-05-02 17:33:12,267 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-02 17:33:12,267 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/main/resources
+2016-05-02 17:33:12,281 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-02 17:33:12,282 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/test/resources
+2016-05-02 17:37:24,433 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-02 17:37:24,433 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/main/resources
+2016-05-02 17:37:24,434 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-02 17:37:24,435 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/test/resources
