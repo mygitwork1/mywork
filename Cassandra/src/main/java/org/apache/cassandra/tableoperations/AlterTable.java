@@ -3,7 +3,6 @@ package org.apache.cassandra.tableoperations;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Scanner;
 
 import com.datastax.driver.core.Cluster;
 import com.datastax.driver.core.Session;
