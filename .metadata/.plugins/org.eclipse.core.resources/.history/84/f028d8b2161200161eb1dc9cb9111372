@@ -1,0 +1,42 @@
+package org.apache.cassandra.tableoperations;
+
+import java.util.Scanner;
+
+import com.datastax.driver.core.Cluster;
+import com.datastax.driver.core.Session;
+
+public class AlterTable {
+
+	public static void main(String[] args) {
+    
+		// Creating Cluster object
+		Cluster cluster = Cluster.builder().addContactPoint("127.0.0.1").build();
+	
+		// Creating session object
+		
+		Session session = cluster.connect("test");
+		
+		//Query adding column
+		
+		String query_AddColumn ="ALTER TABLE emp ADD email text";
+		
+		//Query drop column
+		String query_DropColumn ="ALTER TABLE emp DROP email ";
+		
+		System.out.println("Enter you optoin!!");
+		Scanner input = new Scanner(System.in);
+		
+		 Integer option = input.nextInt();
+		//Executing query
+		if(option == 0){
+			session.execute(query_AddColumn);
+		}else{
+		session.execute(query_DropColumn);
+		}
+		input.close();
+		System.out.println("Table altered!!!!");
+		
+		
+	}
+
+}

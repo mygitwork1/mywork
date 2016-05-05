@@ -1,0 +1,27 @@
+package org.apache.cassandra.tableoperations;
+
+import com.datastax.driver.core.Cluster;
+import com.datastax.driver.core.Session;
+
+public class DropTable {
+
+	public static void main(String[] args) {
+
+		// Creating cluster object
+		Cluster cluster = Cluster.builder().addContactPoint("127.0.0.1").build();
+		
+		//Creating session object
+		Session session = cluster.connect("test");
+		
+		// Drop querya
+		String query = "DROP TABLE EMP";
+		
+		//Execute query
+		
+		session.execute(query);
+		
+		System.out.println("Table dropped!!!!");
+		
+	}
+
+}

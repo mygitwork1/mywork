@@ -1,0 +1,31 @@
+package org.apache.cassandra.tableoperations;
+
+import com.datastax.driver.core.Cluster;
+import com.datastax.driver.core.Session;
+
+public class CreatingTable {
+
+	public static void main(String[] args) {
+
+		// Creating Cluster object
+		Cluster cluster = Cluster.builder().addContactPoint("127.0.0.1").build();
+		
+		
+		// Query
+		
+		String query = "CREATE TABLE test.ADDRESS(st_name test,city_name test,state_name test,country_name test)";
+		
+		// Creating session object
+		
+		Session session = cluster.connect("test");
+		
+		// executing query
+		
+		session.execute(query);
+		
+		System.out.println("Table created!!!!");
+		
+		
+	}
+
+}

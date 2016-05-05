@@ -144,3 +144,210 @@
 2016-05-02 17:37:24,433 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/main/resources
 2016-05-02 17:37:24,434 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2016-05-02 17:37:24,435 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/test/resources
+2016-05-04 11:41:10,172 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.apache.cassandra:Cassandra:0.0.1-SNAPSHOT @ /home/hduser/Documents/Cassandra/Cassandra/pom.xml.
+2016-05-04 11:41:18,262 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 11:41:18,267 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/main/resources
+2016-05-04 11:41:18,270 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 11:41:18,271 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/test/resources
+2016-05-04 11:42:08,258 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 11:42:08,258 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/main/resources
+2016-05-04 11:42:08,269 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 11:42:08,269 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/test/resources
+2016-05-04 11:42:39,993 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 11:42:39,993 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/main/resources
+2016-05-04 11:42:39,996 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 11:42:39,997 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/test/resources
+2016-05-04 11:47:55,107 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 11:47:55,108 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/main/resources
+2016-05-04 11:47:55,111 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 11:47:55,111 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/test/resources
+2016-05-04 11:49:32,136 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 11:49:32,136 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/main/resources
+2016-05-04 11:49:32,139 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 11:49:32,140 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/test/resources
+2016-05-04 11:53:25,996 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 11:53:25,997 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/main/resources
+2016-05-04 11:53:26,001 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 11:53:26,001 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/test/resources
+2016-05-04 11:54:27,138 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 11:54:27,138 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/main/resources
+2016-05-04 11:54:27,142 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 11:54:27,142 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/test/resources
+2016-05-04 11:57:17,381 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 11:57:17,382 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/main/resources
+2016-05-04 11:57:17,399 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 11:57:17,399 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/test/resources
+2016-05-04 12:01:47,210 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:01:47,212 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/main/resources
+2016-05-04 12:01:47,230 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:01:47,230 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/test/resources
+2016-05-04 12:02:03,519 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:02:03,520 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/main/resources
+2016-05-04 12:02:03,524 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:02:03,524 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/test/resources
+2016-05-04 12:08:02,245 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:08:02,246 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/main/resources
+2016-05-04 12:08:02,248 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:08:02,249 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/test/resources
+2016-05-04 12:08:56,439 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:08:56,439 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/main/resources
+2016-05-04 12:08:56,440 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:08:56,441 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/test/resources
+2016-05-04 12:09:36,811 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:09:36,811 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/main/resources
+2016-05-04 12:09:36,813 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:09:36,813 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/test/resources
+2016-05-04 12:10:17,558 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:10:17,558 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/main/resources
+2016-05-04 12:10:17,559 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:10:17,559 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/test/resources
+2016-05-04 12:10:23,118 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:10:23,118 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/main/resources
+2016-05-04 12:10:23,119 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:10:23,120 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/test/resources
+2016-05-04 12:11:03,302 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:11:03,302 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/main/resources
+2016-05-04 12:11:03,309 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:11:03,310 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/test/resources
+2016-05-04 12:14:58,705 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:14:58,705 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/main/resources
+2016-05-04 12:14:58,707 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:14:58,707 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/test/resources
+2016-05-04 12:16:37,560 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:16:37,560 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/main/resources
+2016-05-04 12:16:37,561 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:16:37,562 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/test/resources
+2016-05-04 12:16:43,598 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:16:43,598 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/main/resources
+2016-05-04 12:16:43,599 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:16:43,599 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/test/resources
+2016-05-04 12:17:00,482 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:17:00,483 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/main/resources
+2016-05-04 12:17:00,485 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:17:00,485 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/test/resources
+2016-05-04 12:17:17,289 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:17:17,289 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/main/resources
+2016-05-04 12:17:17,290 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:17:17,290 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/test/resources
+2016-05-04 12:17:31,059 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:17:31,059 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/main/resources
+2016-05-04 12:17:31,060 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:17:31,060 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/test/resources
+2016-05-04 12:17:52,459 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:17:52,459 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/main/resources
+2016-05-04 12:17:52,460 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:17:52,460 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/test/resources
+2016-05-04 12:19:35,371 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:19:35,372 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/main/resources
+2016-05-04 12:19:35,373 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:19:35,373 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/test/resources
+2016-05-04 12:22:14,358 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:22:14,358 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/main/resources
+2016-05-04 12:22:14,359 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:22:14,359 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/test/resources
+2016-05-04 12:23:22,153 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:23:22,153 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/main/resources
+2016-05-04 12:23:22,154 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:23:22,154 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/test/resources
+2016-05-04 12:23:44,353 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:23:44,353 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/main/resources
+2016-05-04 12:23:44,354 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:23:44,354 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/test/resources
+2016-05-04 12:25:06,469 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:25:06,469 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/main/resources
+2016-05-04 12:25:06,471 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:25:06,473 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/test/resources
+2016-05-04 12:25:55,992 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:25:55,993 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/main/resources
+2016-05-04 12:25:55,994 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:25:55,994 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/test/resources
+2016-05-04 12:29:15,039 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:29:15,040 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/main/resources
+2016-05-04 12:29:15,041 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:29:15,041 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/test/resources
+2016-05-04 12:29:26,303 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:29:26,303 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/main/resources
+2016-05-04 12:29:26,305 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:29:26,305 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/test/resources
+2016-05-04 12:29:34,820 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:29:34,821 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/main/resources
+2016-05-04 12:29:34,823 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:29:34,824 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/test/resources
+2016-05-04 12:30:04,146 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:30:04,146 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/main/resources
+2016-05-04 12:30:04,147 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:30:04,148 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/test/resources
+2016-05-04 12:32:43,346 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:32:43,346 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/main/resources
+2016-05-04 12:32:43,347 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:32:43,347 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/test/resources
+2016-05-04 12:34:37,309 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:34:37,309 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/main/resources
+2016-05-04 12:34:37,312 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:34:37,312 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/test/resources
+2016-05-04 12:34:42,679 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:34:42,679 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/main/resources
+2016-05-04 12:34:42,680 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:34:42,680 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/test/resources
+2016-05-04 12:35:49,622 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:35:49,622 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/main/resources
+2016-05-04 12:35:49,623 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:35:49,623 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/test/resources
+2016-05-04 12:36:32,634 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:36:32,634 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/main/resources
+2016-05-04 12:36:32,636 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:36:32,637 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/test/resources
+2016-05-04 12:38:58,199 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:38:58,200 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/main/resources
+2016-05-04 12:38:58,200 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:38:58,201 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/test/resources
+2016-05-04 12:39:44,644 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:39:44,644 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/main/resources
+2016-05-04 12:39:44,645 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:39:44,645 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/test/resources
+2016-05-04 12:40:10,293 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:40:10,293 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/main/resources
+2016-05-04 12:40:10,294 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:40:10,294 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/test/resources
+2016-05-04 12:44:02,696 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:44:02,696 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/main/resources
+2016-05-04 12:44:02,697 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:44:02,697 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/test/resources
+2016-05-04 12:45:30,085 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:45:30,086 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/main/resources
+2016-05-04 12:45:30,086 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:45:30,087 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/test/resources
+2016-05-04 12:46:54,404 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:46:54,417 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/main/resources
+2016-05-04 12:46:54,419 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:46:54,420 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/test/resources
+2016-05-04 12:49:04,260 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:49:04,261 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/main/resources
+2016-05-04 12:49:04,261 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:49:04,262 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/test/resources
+2016-05-04 12:49:55,555 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:49:55,555 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/main/resources
+2016-05-04 12:49:55,556 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:49:55,556 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/test/resources
+2016-05-04 12:59:34,116 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:59:34,139 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/main/resources
+2016-05-04 12:59:34,140 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 12:59:34,141 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/test/resources
+2016-05-04 13:01:05,647 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 13:01:05,684 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/main/resources
+2016-05-04 13:01:05,686 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-04 13:01:05,687 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/test/resources
+2016-05-05 11:21:54,247 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.apache.cassandra:Cassandra:0.0.1-SNAPSHOT @ /home/hduser/Documents/Cassandra/Cassandra/pom.xml.
+2016-05-05 11:21:58,648 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 11:21:58,648 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/main/resources
+2016-05-05 11:21:58,659 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 11:21:58,659 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/test/resources
+2016-05-05 11:21:58,722 [Worker-2] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.apache.cassandra:Cassandra:0.0.1-SNAPSHOT @ /home/hduser/Documents/Cassandra/Cassandra/pom.xml.
+2016-05-05 11:22:02,936 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 11:22:02,936 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/main/resources
+2016-05-05 11:22:02,938 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 11:22:02,938 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/test/resources
+2016-05-05 11:22:13,941 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 11:22:13,942 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/main/resources
+2016-05-05 11:22:13,962 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-05-05 11:22:13,962 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/hduser/Documents/Cassandra/Cassandra/src/test/resources
