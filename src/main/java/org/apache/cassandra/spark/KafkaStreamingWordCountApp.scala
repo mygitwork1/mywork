@@ -17,7 +17,7 @@ object KafkaStreamingWordCountApp {
     
     val path ="/home/hduser/Documents/data/words"
     
-    
+    println("Cassandra spark connection demo!!!")
     val topic = "streaming.wordcount.topic"
     val group = "streaming.wordcount.group"
     
