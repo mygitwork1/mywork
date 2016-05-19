@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:c="http://www.springframework.org/schema/c"
+    xmlns:p="http://www.springframework.org/schema/p" xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context-4.2.xsd">
+    
+    
+    <bean id="service" class="com.java.spring.core.Service">
+    <!-- Constructor injection -->
+   <constructor-arg ref="foo"></constructor-arg>
+    <constructor-arg value="Spring" ></constructor-arg>
+    </bean>
+    
+    <!-- Setter Injection -->
+    <bean id="setterInjection" class="com.java.spring.core.SetterInjection">
+    <property name="foo" ref="foo"></property>
+    
+    </bean>
+    <bean id="eBean" class="com.java.spring.core.ExampleBean" factory-method="createInstances">
+    <constructor-arg ref="foo"></constructor-arg>
+    <constructor-arg ref="boo"></constructor-arg>
+    <constructor-arg value="1000"></constructor-arg>
+    </bean>
+    
+    <bean id="foo" class="com.java.spring.core.Foo"></bean>
+    <bean id="boo" class="com.java.spring.core.Boo"></bean>
+    
+    
+    
+    
+    <bean id="collections" class="com.java.spring.core.CollectionExample" p:email="myemail@example.com">
+     <!-- results in a setSomeList(java.util.List) call -->
+    <property name="carsList">
+    <list>
+    <value>Honda</value>
+    <value>Kia</value>
+    <value>Subaru</value>
+    <value>Bmw</value>
+    </list>
+    </property>
+    <!-- results in a setSomeMap(java.util.Map) call -->
+    <property name="tempMap">
+    <map>
+    <entry key="miami" value="60.0"></entry>
+    <entry key="dayton" value="45.0"></entry>
+    <entry key="centerville" value="72.2"></entry>
+    </map>
+    </property>
+    <!-- results in a setSomeSet(java.util.Set) call -->
+    <property name="ownerNames">
+    <set>
+    <value>Subbu</value>
+    <value>Neelima</value>
+    <value>Aadhya</value>
+    </set>
+    </property>
+    <!-- results in a setAdminEmails(java.util.Properties) call -->
+    <property name="emailsList">
+    <props>
+    <prop key="admin">admin@example.com</prop>
+    <prop key="dev">dev@example.com</prop>
+    <prop key="support">support@gmail.com</prop>
+    </props>
+    
+    </property>
+    </bean>
+    </beans>
